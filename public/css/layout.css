@@ -61,7 +61,8 @@ header .banner-text {
   width: 100%;
 }
 header .banner-text h1 {
-  font: 90px/1.1em "opensans-bold", sans-serif;
+  font: 90px/1.1em "Roboto", sans-serif;
+  font-weight: 300;
   color: #fff;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
@@ -85,8 +86,7 @@ header .banner-text hr {
 
 /* header social links */
 header .social {
-  margin: 24px 0;
-  padding: 0;
+  padding-top: 75px;
   font-size: 30px;
 }
 header .social li {
@@ -98,7 +98,7 @@ header .social li a {
   color: #fff;
 }
 header .social li a:hover {
-  color: #0762f9;
+  color: #070707;
 }
 
 /* scrolldown link */
@@ -138,7 +138,8 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-  font: 12px "opensans-bold", sans-serif;
+  font: 12px "Roboto", sans-serif;
+  font-weight: 700;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -416,7 +417,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #search {
-  background: #191919;
+  background: #f1f0f0;
   padding-top: 96px;
   padding-bottom: 102px;
   height: 800px;
@@ -430,7 +431,7 @@ ul#nav li.current a {
 
 #search a,
 #search a:visited {
-  color: #0762f9;
+  color: #74839b;
 }
 #search a:hover,
 #search a:focus {
@@ -438,7 +439,8 @@ ul#nav li.current a {
 }
 
 #search h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
+  font: 18px/24px "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #ebeeee;
@@ -459,13 +461,14 @@ ul#nav li.current a {
 }
 
 #search h4 {
-  font: 16px/24px "opensans-bold", sans-serif;
+  font: 16px/24px "Roboto", sans-serif;
+  font-weight: 700;
   color: #ebeeee;
   margin-bottom: 6px;
 }
 #search p.lead {
-  font: 18px/36px "opensans-light", sans-serif;
-  padding-right: 3%;
+  font: 18px/36px "Roboto", sans-serif;
+  font-weight: 300;
 }
 #search .header-col {
   padding-top: 6px;
@@ -476,7 +479,8 @@ ul#nav li.current a {
   margin-bottom: 30px;
 }
 #search label {
-  font: 15px/24px "opensans-bold", sans-serif;
+  font: 15px/24px "Roboto", sans-serif;
+  font-weight: 700;
   margin: 12px 0;
   color: #ebeeee;
   display: inline-block;
@@ -494,25 +498,29 @@ ul#nav li.current a {
   outline: none;
   font-size: 15px;
   line-height: 24px;
-  width: 65%;
+  width: 50%;
 }
 #search input:focus,
 #search textarea:focus,
 #search select:focus {
   color: #fff;
-  background-color: #0762f9;
+  background-color: #a9c7f8;
 }
 #search button.submit {
+  padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
-  background: #0d0d0d;
+  background: #a72441;
   border: none;
   cursor: pointer;
-  height: auto;
-  display: inline-block;
-  border-radius: 0px;
-  margin-left: 26%;
+  min-height: 44px;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 10%;
 }
 #search button.submit:hover {
   color: #0d0d0d;
@@ -562,7 +570,7 @@ ul#nav li.current a {
   display: block;
 }
 #twitter li b a {
-  font: 13px/36px "opensans-regular", Sans-serif;
+  font: 13px/36px "Roboto", Sans-serif;
   color: #474747 !important;
   border: none;
 }
@@ -586,7 +594,7 @@ footer a:visited {
 }
 footer a:hover,
 footer a:focus {
-  color: #fff;
+  color: rgb(224, 62, 89);
 }
 
 /* copyright */
@@ -672,8 +680,16 @@ footer .social-links li:first-child {
   margin-right: 15px;
 }
 .project-btn {
+  font-size: 1.5rem !important;
+  font-weight: 300;
   background-color: #1abc9c !important;
 }
 .github-btn {
+  font-size: 1.5rem !important;
+  font-weight: 300;
   background-color: #34495e !important;
+}
+
+svg {
+  margin-right: 5px;
 }

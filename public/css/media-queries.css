@@ -10,7 +10,8 @@
   /* header styles
  ------------------------------------------------------------------ */
   header .banner-text h1 {
-    font: 80px/1.1em "opensans-bold", sans-serif;
+    font: 80px/1.1em "Roboto", sans-serif;
+    font-weight: 700;
     letter-spacing: -1px;
     margin: 0 auto 12px auto;
   }
@@ -25,7 +26,7 @@
     padding-bottom: 12px;
   }
   header .banner-text h1 {
-    font: 78px/1.1em "opensans-bold", sans-serif;
+    font: 78px/1.1em "Roboto", sans-serif;
     letter-spacing: -1px;
   }
   header .banner-text h3 {
@@ -38,7 +39,8 @@
   }
   /* nav-wrap */
   #nav-wrap {
-    font: 11px "opensans-bold", sans-serif;
+    font: 11px "Roboto", sans-serif;
+    font-weight: 700;
     letter-spacing: 1.5px;
   }
 
@@ -52,7 +54,8 @@
     line-height: 66px;
   }
   #search .section-head p.lead {
-    font: 17px/33px opensans-light, sans-serif;
+    font: 17px/33px "Roboto", sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -63,7 +66,8 @@
   /* mobile navigation
  -------------------------------------------------------------------- */
   #nav-wrap {
-    font: 12px "opensans-bold", sans-serif;
+    font: 12px "Roboto", sans-serif;
+    font-weight: 700;
     background: transparent !important;
     letter-spacing: 1.5px;
     width: auto;
@@ -156,7 +160,8 @@
     padding-top: 6px;
   }
   header .banner-text h1 {
-    font: 68px/1.1em "opensans-bold", sans-serif;
+    font: 68px/1.1em "Roboto", sans-serif;
+    font-weight: 700;
   }
   header .banner-text h3 {
     font: 16px/1.9em "librebaskerville-regular", serif;
@@ -224,7 +229,8 @@
     text-align: center;
   }
   #call-to-action h1 {
-    font: 16px/24px "opensans-bold", sans-serif;
+    font: 16px/24px "Roboto", sans-serif;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -254,7 +260,8 @@
     text-align: center;
   }
   #testimonials h1 {
-    font: 16px/24px "opensans-bold", sans-serif;
+    font: 16px/24px "Roboto", sans-serif;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -288,7 +295,8 @@
     margin-bottom: 12px;
   }
   #contact .section-head h1 {
-    font: 16px/24px "opensans-bold", sans-serif;
+    font: 16px/24px "Roboto", sans-serif;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -374,7 +382,8 @@
     padding-top: 24px;
   }
   header .banner-text h1 {
-    font: 40px/1.1em "opensans-bold", sans-serif;
+    font: 40px/1.1em "Roboto", sans-serif;
+    font-weight: 700;
     margin: 0 auto 24px auto;
   }
   header .banner-text h3 {

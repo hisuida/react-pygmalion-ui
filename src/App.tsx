@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, Component } from "react";
+import axios from "axios";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import OrderList from "./components/order-list.component";
+import Search from "./components/search.component";
 import Header from "./components/header.component";
 import Footer from "./components/footer.component";
 
@@ -28,13 +29,11 @@ class App extends Component<any, IState> {
 
   render() {
     return (
-      <Router>
-        <div className="App">
-          <Header data={this.state.siteData} />
-          <OrderList />
-          <Footer />
-        </div>
-      </Router>
+      <div className="App">
+        <Header data={this.state.siteData} />
+        <Search />
+        <Footer />
+      </div>
     );
   }
 }
