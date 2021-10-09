@@ -10,7 +10,7 @@ function ConnectedOrderList({ order }) {
   if (order) {
     return <OrderCard order={order} />;
   } else {
-    return <p className="lead">No Orders to Display</p>;
+    return <p className="lead">Please input a serial number</p>;
   }
 }
 

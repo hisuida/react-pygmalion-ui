@@ -26,7 +26,9 @@ const initialState = { order: [] };
 
 function rootReducer(state = initialState, action) {
   const { type, payload } = action;
-  const order = payload ? formatData(payload[0]) : undefined;
+  const order = payload?.length
+    ? formatData(payload[0])
+    : { error: "Serial Number Not Found in Database" };
 
   switch (type) {
     case RETRIEVE_ORDERINFO:

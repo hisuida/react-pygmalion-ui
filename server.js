@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 //serve react build files
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(__dirname + "/public"));
 
 //create connection to database
 const db = mysql.createPool({
