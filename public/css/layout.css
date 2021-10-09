@@ -194,7 +194,7 @@ ul#nav li a:active {
   background-color: transparent !important;
 }
 ul#nav li.current a {
-  color: #fe6928;
+  color: #ef5350;
 }
 
 /*
@@ -491,8 +491,8 @@ ul#nav li.current a {
 #search textarea,
 #search select {
   padding: 10px 20px;
-  color: #eee;
-  background: #373233;
+  color: rgb(255, 248, 248);
+  background: #474747;
   margin-bottom: 42px;
   border: 0;
   outline: none;
@@ -503,15 +503,15 @@ ul#nav li.current a {
 #search input:focus,
 #search textarea:focus,
 #search select:focus {
-  color: #fff;
-  background-color: #a9c7f8;
+  color: rgb(19, 18, 18);
+  background-color: #d3d5d6;
 }
 #search button.submit {
   padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
-  background: #a72441;
+  background: #b61827;
   border: none;
   cursor: pointer;
   min-height: 44px;
@@ -527,7 +527,7 @@ ul#nav li.current a {
   background: #fff;
 }
 #search span.required {
-  color: #0762f9;
+  color: #ef5350;
   font-size: 13px;
 }
 #message-warning,
@@ -682,12 +682,12 @@ footer .social-links li:first-child {
 .project-btn {
   font-size: 1.5rem !important;
   font-weight: 300;
-  background-color: #1abc9c !important;
+  background-color: #00675b !important;
 }
 .github-btn {
   font-size: 1.5rem !important;
   font-weight: 300;
-  background-color: #34495e !important;
+  background-color: #b61827 !important;
 }
 
 svg {

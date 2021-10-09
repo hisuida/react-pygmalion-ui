@@ -41,7 +41,7 @@ function rootReducer(state = initialState, action) {
 
 function formatData(payload) {
   const order = {
-    displayID: payload.DisplayID ?? payload.CustomerID,
+    displayId: payload.DisplayID ?? payload.CustomerID,
     serialNumber: payload.SerialNumber_ID,
     orderDate: new Date(payload.OrderDate).toLocaleString(),
     typeDesc: getTypeDesc(payload.Type_ID),
