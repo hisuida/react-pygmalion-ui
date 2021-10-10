@@ -14,9 +14,20 @@
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
-
+:root {
+  --accent: #4d194d;
+  --accent-light: #a047a0;
+  --main: #065a60;
+  --main-light: #228f97;
+  --main-dark: #1b3a4b;
+  --main-text: #272640;
+  --gray: #979dac;
+  --black: #0f0f0f;
+  --white: white;
+  --light-gray: rgb(226, 226, 226);
+}
 body {
-  background: #0f0f0f;
+  background: var(--black);
 }
 
 /* ------------------------------------------------------------------ */
@@ -63,25 +74,24 @@ header .banner-text {
 header .banner-text h1 {
   font: 90px/1.1em "Roboto", sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: var(--white);
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
 }
 header .banner-text h3 {
   font: 18px/1.9em "librebaskerville-regular", serif;
-  color: #ddd;
+  color: var(--light-gray);
   margin: 0 auto;
   width: 70%;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-  color: #fff;
+  color: var(--white);
 }
 header .banner-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
-  border-color: #2f2d2e;
-  border-color: rgba(150, 150, 150, 0.1);
+  border-color: var(--main-dark);
 }
 
 /* header social links */
@@ -95,10 +105,10 @@ header .social li {
   padding: 0;
 }
 header .social li a {
-  color: #fff;
+  color: var(--white);
 }
 header .social li a:hover {
-  color: #070707;
+  color: var(--main-dark);
 }
 
 /* scrolldown link */
@@ -107,13 +117,12 @@ header .scrolldown a {
   bottom: 30px;
   left: 50%;
   margin-left: -29px;
-  color: #fff;
+  color: var(--white);
   display: block;
   height: 42px;
   width: 42px;
   font-size: 42px;
   line-height: 42px;
-  color: #fff;
   border-radius: 100%;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -122,7 +131,7 @@ header .scrolldown a {
   transition: all 0.3s ease-in-out;
 }
 header .scrolldown a:hover {
-  color: #ef5350;
+  color: var(--main);
 }
 
 /* primary navigation
@@ -150,7 +159,7 @@ header .scrolldown a:hover {
   top: 0;
 }
 .opaque {
-  background-color: #333;
+  background-color: var(--main-dark);
 }
 
 /* hide toggle button */
@@ -181,7 +190,7 @@ ul#nav li a {
   line-height: 32px;
   text-decoration: none;
   text-align: left;
-  color: #fff;
+  color: var(--white);
 
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
@@ -194,7 +203,7 @@ ul#nav li a:active {
   background-color: transparent !important;
 }
 ul#nav li.current a {
-  color: #ef5350;
+  color: var(--accent-light);
 }
 
 /*
@@ -392,7 +401,7 @@ ul#nav li.current a {
   width: 12px;
   height: 12px;
   display: block;
-  background: #ddd;
+  background: var(--light-gray);
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   text-indent: -9999px;
@@ -407,7 +416,7 @@ ul#nav li.current a {
   background: rgba(255, 255, 255, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: #fff;
+  background: var(--white);
   background: rgba(255, 255, 255, 0.9);
   cursor: default;
 }
@@ -417,13 +426,13 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #search {
-  background: #f1f0f0;
+  background: var(--white);
   padding-top: 96px;
   padding-bottom: 102px;
   height: 800px;
   min-height: 500px;
   width: 100%;
-  color: #636363;
+  color: var(--main-text);
 }
 #search .section-head {
   margin-bottom: 42px;
@@ -431,19 +440,18 @@ ul#nav li.current a {
 
 #search a,
 #search a:visited {
-  color: #74839b;
+  color: var(--main);
 }
 #search a:hover,
 #search a:focus {
-  color: #fff;
+  color: var(--white);
 }
 
 #search h1 {
-  font: 18px/24px "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #b61827;
+  color: var(--accent);
   margin-bottom: 6px;
 }
 
@@ -455,9 +463,8 @@ ul#nav li.current a {
   margin: 10px;
 }
 #search h4 {
-  font: 16px/24px "Roboto", sans-serif;
   font-weight: 700;
-  color: #00675b;
+  color: var(--main);
   margin-bottom: 6px;
 }
 
@@ -484,17 +491,16 @@ ul#nav li.current a {
   font: 15px/24px "Roboto", sans-serif;
   font-weight: 700;
   margin: 12px 0;
-  color: #ebeeee;
+  color: var(--main-light);
   display: inline-block;
-  float: left;
   width: 26%;
 }
 #search input,
 #search textarea,
 #search select {
   padding: 10px 20px;
-  color: rgb(255, 248, 248);
-  background: #474747;
+  color: var(--main-text);
+  background: var(--light-gray);
   margin-bottom: 42px;
   border: 0;
   outline: none;
@@ -505,15 +511,14 @@ ul#nav li.current a {
 #search input:focus,
 #search textarea:focus,
 #search select:focus {
-  color: rgb(19, 18, 18);
-  background-color: #d3d5d6;
+  color: var(--accent);
 }
 #search button.submit {
   padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
-  background: #b61827;
+  color: var(--white);
+  background: var(--accent);
   border: none;
   cursor: pointer;
   min-height: 44px;
@@ -525,8 +530,8 @@ ul#nav li.current a {
   width: 10%;
 }
 #search button.submit:hover {
-  color: #0d0d0d;
-  background: #fff;
+  color: var(--main-dark);
+  background: var(--white);
 }
 #search span.required {
   color: #ef5350;
@@ -582,9 +587,9 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 footer {
-  padding-top: 48px;
-  margin-bottom: 48px;
-  color: #303030;
+  padding: 48px 0px;
+  background-color: var(--light-gray);
+  color: var(--main-text);
   font-size: 14px;
   text-align: center;
   position: relative;
@@ -592,11 +597,11 @@ footer {
 
 footer a,
 footer a:visited {
-  color: #525252;
+  color: var(--accent);
 }
 footer a:hover,
 footer a:focus {
-  color: rgb(224, 62, 89);
+  color: var(--accent-light);
 }
 
 /* copyright */
@@ -617,7 +622,7 @@ footer .copyright li:before {
   content: "\2022";
   padding-left: 10px;
   padding-right: 10px;
-  color: #095153;
+  color: var(--main-light);
 }
 footer .copyright li:first-child:before {
   display: none;
@@ -654,7 +659,7 @@ footer .social-links li:first-child {
   display: block;
   width: 60px;
   height: 60px;
-  background-color: #525252;
+  background-color: var(--main);
 
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -662,13 +667,13 @@ footer .social-links li:first-child {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  color: #fff;
+  color: var(--white);
   font-size: 21px;
   line-height: 60px;
   border-radius: 100%;
 }
 #go-top a:hover {
-  background-color: #0f9095;
+  background-color: var(--accent-light);
 }
 
 .social .btn:first-child {
@@ -684,12 +689,12 @@ footer .social-links li:first-child {
 .project-btn {
   font-size: 1.5rem !important;
   font-weight: 300;
-  background-color: #00675b !important;
+  background-color: var(--main) !important;
 }
 .github-btn {
   font-size: 1.5rem !important;
   font-weight: 300;
-  background-color: #b61827 !important;
+  background-color: var(--accent-light) !important;
 }
 
 svg {
