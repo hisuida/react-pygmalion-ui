@@ -11,7 +11,6 @@ class Footer extends Component {
               <ul className="copyright">
                 <li>&copy; Copyright 2021 Nordic Giant / Jeane H.</li>
                 <li>
-                  Design by{" "}
                   <a
                     title="Contact Webmaster"
                     href="mailto:pygmaliondolls@gmail.com"
