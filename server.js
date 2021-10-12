@@ -11,6 +11,14 @@ app.use(express.json());
 //serve react build files
 app.use(express.static(__dirname + "/public"));
 
+// declare react files in build as static
+app.use(express.static(path.join(__dirname, "build")));
+
+// serve index.html from the build folder
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
 //create connection to database
 const db = mysql.createPool({
   host: process.env.DB_HOST, //localhost
