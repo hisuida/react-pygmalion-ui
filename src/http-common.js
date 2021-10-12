@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://localhost:3306",
+  baseURL: "https://pygmalion-serial.herokuapp.com/",
   headers: {
     "Content-type": "application/json",
   },
