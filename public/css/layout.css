@@ -44,7 +44,7 @@ header {
 }
 
 header .particles-bg-canvas-self {
-  background-image: url("../images/main.jpg");
+  background-image: url("/images/main.jpg");
   z-index: -1;
   opacity: 1;
   background-repeat: no-repeat;
