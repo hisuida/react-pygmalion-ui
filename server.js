@@ -8,9 +8,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-//serve react build files
-app.use(express.static(__dirname + "/public"));
-
 // declare react files in build as static
 app.use(express.static(path.join(__dirname, "build")));
 
