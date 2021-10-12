@@ -18,7 +18,7 @@ class Header extends React.Component<IProps> {
     const mainKor = this.props.data.mainKor;
     return (
       <header id="home">
-        <ParticlesBg color="#ff0000" num={25} type="cobweb" bg={true} />
+        <ParticlesBg color="#228f97" num={25} type="cobweb" bg={true} />
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
