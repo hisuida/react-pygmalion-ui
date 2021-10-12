@@ -20,6 +20,8 @@ enum ModelType {
   EI = "Eita",
   NO = "Noah",
   LB = "Libra",
+  OB = "Body - Old Style",
+  NB = "Body - New Style",
 }
 
 const initialState = { order: [] };
