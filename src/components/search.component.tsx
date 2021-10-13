@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import OrderList from "./order-list.component";
 import { findOrdersBySerialId } from "../actions/orderInfo";
@@ -25,8 +25,6 @@ class ConnectedSearch extends Component<
   }
 
   handleChange = (e) => {
-    const stringSearch = e.target.value.toString();
-    const upperTerm = stringSearch.toUpperCase();
     this.setState({ searchField: e.target.value });
   };
 
