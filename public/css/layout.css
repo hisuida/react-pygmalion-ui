@@ -427,10 +427,10 @@ ul#nav li.current a {
 
 #search {
   background: var(--white);
-  padding-top: 96px;
-  padding-bottom: 102px;
-  height: 800px;
-  min-height: 500px;
+  padding-top: 15%;
+  padding-bottom: 20%;
+  height: 75%;
+  min-height: 50%;
   width: 100%;
   color: var(--main-text);
 }
@@ -699,4 +699,24 @@ footer .social-links li:first-child {
 
 svg {
   margin-right: 5px;
+}
+
+/* mobile narrow
+ --------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .row {
+    width: auto;
+  }
+
+  button {
+    width: auto !important;
+  }
+
+  .btn:first-child {
+    margin-right: 0px !important;
+  }
+
+  hr {
+    display: none;
+  }
 }
