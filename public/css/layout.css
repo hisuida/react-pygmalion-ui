@@ -50,6 +50,11 @@ header .particles-bg-canvas-self {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 /* vertically center banner section */
@@ -703,7 +708,7 @@ svg {
 
 /* mobile narrow
  --------------------------------------------------------------- */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 460px) {
   .row {
     width: auto;
   }
@@ -714,6 +719,20 @@ svg {
 
   .btn:first-child {
     margin-right: 0px !important;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    width: auto;
+  }
+
+  button {
+    width: auto !important;
   }
 
   hr {

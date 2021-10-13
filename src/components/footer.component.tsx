@@ -7,7 +7,7 @@ class Footer extends Component {
       <footer>
         <div className="row">
           <Fade bottom>
-            <div className="twelve columns">
+            <div className="twelve columns centered">
               <ul className="copyright">
                 <li>&copy; Copyright 2021 Nordic Giant / Jeane H.</li>
                 <li>
