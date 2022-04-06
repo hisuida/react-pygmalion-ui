@@ -1,8 +1,6 @@
 import React from "react";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 interface IProps {
   data: any;
@@ -55,11 +53,9 @@ class Header extends React.Component<IProps> {
               <ul className="social">
                 <li>
                   <a href={mainKor} className="button btn project-btn">
-                    <FontAwesomeIcon icon={faHeart} />
                     Pygmalion Dolls - Kor
                   </a>
                   <a href={mainEng} className="button btn github-btn">
-                    <FontAwesomeIcon icon={faHeart} />
                     Pygmalion Dolls - Eng
                   </a>
                 </li>

@@ -44,8 +44,10 @@ function rootReducer(state = initialState, action) {
 }
 
 function formatData(payload) {
+  const displayName = payload.DisplayID.length ? payload.DisplayID : payload.CustomerID;
+  const orderDate = new Date(payload.OrderDate).toLocaleString()
   const order = {
-    displayId: payload.DisplayID ?? payload.CustomerID,
+    displayId: displayName,
     serialNumber: payload.SerialNumber_ID,
     orderDate: new Date(payload.OrderDate).toLocaleString(),
     typeDesc: getTypeDesc(payload.Type_ID),
@@ -61,7 +63,7 @@ function getTypeDesc(typeId) {
   const skinType = SkinType[skinTypeStr];
   let modelType;
   if (modelStr.length === 3) {
-    modelType = "IYH30 " + ModelType[modelStr.slice(-1)];
+    modelType = "IYH30 " + ModelType[modelStr.slice(1)];
   } else {
     modelType = ModelType[modelStr];
   }
