@@ -44,8 +44,7 @@ function rootReducer(state = initialState, action) {
 }
 
 function formatData(payload) {
-  const displayName = payload.DisplayID.length ? payload.DisplayID : payload.CustomerID;
-  const orderDate = new Date(payload.OrderDate).toLocaleString()
+  const displayName = payload.DisplayID && payload.DisplayID.length ? payload.DisplayID : payload.CustomerID;
   const order = {
     displayId: displayName,
     serialNumber: payload.SerialNumber_ID,
