@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
 
 class Footer extends Component {
   render() {
     return (
       <footer>
         <div className="row">
-          <Fade bottom>
+          <Fade>
             <div className="twelve columns centered">
               <ul className="copyright">
                 <li>&copy; Copyright 2021 Nordic Giant / Jeane H.</li>

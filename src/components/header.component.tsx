@@ -1,6 +1,6 @@
 import React from "react";
 import ParticlesBg from "particles-bg";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
 
 interface IProps {
   data: any;
@@ -42,14 +42,14 @@ class Header extends React.Component<IProps> {
 
         <div className="row banner">
           <div className="banner-text">
-            <Fade bottom>
+            <Fade>
               <h1 className="responsive-headline">{title}</h1>
             </Fade>
-            <Fade bottom duration={1200}>
+            <Fade duration={1200}>
               <h3>{description}.</h3>
             </Fade>
             <hr />
-            <Fade bottom duration={2000}>
+            <Fade duration={2000}>
               <ul className="social">
                 <li>
                   <a href={mainKor} className="button btn project-btn">
